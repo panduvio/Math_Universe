@@ -57,8 +57,8 @@ class _DiscussionRoomFeedbackPageState
                   child: Container(
                     height: 14,
                     decoration: BoxDecoration(
-                        borderRadius:
-                            BorderRadius.vertical(top: Radius.circular(50)),
+                        borderRadius: const BorderRadius.vertical(
+                            top: Radius.circular(50)),
                         color: AppColor().coldSnow),
                   ),
                 )
@@ -67,14 +67,14 @@ class _DiscussionRoomFeedbackPageState
           ),
           Expanded(
               child: ListView(
-            padding: EdgeInsets.symmetric(horizontal: 42),
+            padding: const EdgeInsets.symmetric(horizontal: 42),
             children: [
-              Container(
+              SizedBox(
                 height: 110,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Column(
+                    const Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
@@ -96,7 +96,7 @@ class _DiscussionRoomFeedbackPageState
                           size: 70,
                           color: AppColor().red,
                         ),
-                        Text(
+                        const Text(
                           '4,4 K',
                           style: TextStyle(
                             fontSize: 20,
@@ -107,15 +107,15 @@ class _DiscussionRoomFeedbackPageState
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
-              Container(
+              SizedBox(
                 height: 300,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Row(
+                    const Row(
                       children: [
                         HeroIcon(HeroIcons.userCircle),
                         SizedBox(
@@ -127,7 +127,7 @@ class _DiscussionRoomFeedbackPageState
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     Row(
@@ -164,20 +164,20 @@ class _DiscussionRoomFeedbackPageState
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
-                    Text(
+                    const Text(
                       'Jawabannya sangat membantu, terima kasih!!',
                       textAlign: TextAlign.justify,
                       style: TextStyle(
                         fontSize: 16,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
-                    Row(
+                    const Row(
                       children: [
                         HeroIcon(HeroIcons.userCircle),
                         SizedBox(
@@ -189,7 +189,7 @@ class _DiscussionRoomFeedbackPageState
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     Row(
@@ -225,10 +225,10 @@ class _DiscussionRoomFeedbackPageState
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
-                    Text(
+                    const Text(
                       'Maaf mau menanggapi, kenapa titik sampel mata dadu bernilai 5 jumlahnya hanya 1 ya?? belum mengerti..',
                       textAlign: TextAlign.justify,
                       style: TextStyle(
@@ -238,46 +238,44 @@ class _DiscussionRoomFeedbackPageState
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
-              Container(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    HeroIcon(HeroIcons.arrowRight),
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Row(
-                            children: [
-                              HeroIcon(HeroIcons.userCircle),
-                              SizedBox(
-                                width: 10,
-                              ),
-                              Text(
-                                'Zahira Shofa',
-                                style: TextStyle(fontSize: 16),
-                              ),
-                            ],
-                          ),
-                          SizedBox(
-                            height: 10,
-                          ),
-                          Text(
-                            'Halo, Fika! Aku izin bantu menanggapi yaa... jadi titik sampel merupakan banyaknya anggota',
-                            textAlign: TextAlign.justify,
-                            style: TextStyle(
-                              fontSize: 16,
+              const Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  HeroIcon(HeroIcons.arrowRight),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          children: [
+                            HeroIcon(HeroIcons.userCircle),
+                            SizedBox(
+                              width: 10,
                             ),
+                            Text(
+                              'Zahira Shofa',
+                              style: TextStyle(fontSize: 16),
+                            ),
+                          ],
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text(
+                          'Halo, Fika! Aku izin bantu menanggapi yaa... jadi titik sampel merupakan banyaknya anggota',
+                          textAlign: TextAlign.justify,
+                          style: TextStyle(
+                            fontSize: 16,
                           ),
-                        ],
-                      ),
-                    )
-                  ],
-                ),
+                        ),
+                      ],
+                    ),
+                  )
+                ],
               )
             ],
           ))

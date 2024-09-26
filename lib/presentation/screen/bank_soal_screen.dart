@@ -94,7 +94,7 @@ class _BankSoalScreenState extends State<BankSoalScreen> {
                                 isChoosenChoice = index;
                               });
                             },
-                            child: Container(
+                            child: SizedBox(
                               height: 45,
                               child: Row(
                                 children: [

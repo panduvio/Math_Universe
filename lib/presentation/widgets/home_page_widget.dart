@@ -17,7 +17,7 @@ class HomePageWidget extends StatefulWidget {
 class _HomePageWidgetState extends State<HomePageWidget> {
   int kategoriIndex = 0;
   int pageIndex = 0;
-  List<CompetitionEntity> _competitionList = competitionList;
+  final List<CompetitionEntity> _competitionList = competitionList;
 
   @override
   Widget build(BuildContext context) {
@@ -403,7 +403,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                      builder: (context) => TryOutScreen(),
+                                      builder: (context) =>
+                                          const TryOutScreen(),
                                     ));
                               });
                             },

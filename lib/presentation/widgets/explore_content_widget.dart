@@ -15,17 +15,17 @@ class _ExploreContentWidgetState extends State<ExploreContentWidget> {
   final _exploreList = exploreList;
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 110,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(_exploreList[widget.index].title),
-          SizedBox(
+          const SizedBox(
             height: 4,
           ),
           Container(
-            padding: EdgeInsets.all(10),
+            padding: const EdgeInsets.all(10),
             height: 102,
             width: 180,
             clipBehavior: Clip.hardEdge,

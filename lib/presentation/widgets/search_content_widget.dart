@@ -14,8 +14,8 @@ class _SearchContentWidgetState extends State<SearchContentWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(bottom: 10),
-      padding: EdgeInsets.all(10),
+      margin: const EdgeInsets.only(bottom: 10),
+      padding: const EdgeInsets.all(10),
       height: 130,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(8),
@@ -27,25 +27,23 @@ class _SearchContentWidgetState extends State<SearchContentWidget> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Container(
-            child: Image.asset(
-              'assets/modul_image_1.png',
-              fit: BoxFit.fitHeight,
-            ),
+          Image.asset(
+            'assets/modul_image_1.png',
+            fit: BoxFit.fitHeight,
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.end,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
+              const Text(
                 'title',
                 style: TextStyle(fontSize: 30, fontWeight: FontWeight.w700),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Container(
-                padding: EdgeInsets.only(left: 10),
+                padding: const EdgeInsets.only(left: 10),
                 height: 30,
                 width: 128,
                 decoration: BoxDecoration(
@@ -56,7 +54,7 @@ class _SearchContentWidgetState extends State<SearchContentWidget> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
+                    const Text(
                       'Start',
                       style:
                           TextStyle(fontSize: 20, fontWeight: FontWeight.w400),
@@ -86,7 +84,7 @@ class _SearchContentWidgetState extends State<SearchContentWidget> {
               });
             },
             child: Container(
-              padding: EdgeInsets.all(6),
+              padding: const EdgeInsets.all(6),
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(30),
                   border: Border.all(

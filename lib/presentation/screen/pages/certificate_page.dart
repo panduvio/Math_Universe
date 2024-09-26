@@ -57,14 +57,14 @@ class _CertificatePageState extends State<CertificatePage> {
           ),
           Expanded(
             child: ListView(
-              padding: EdgeInsets.only(left: 42, right: 42, top: 42),
+              padding: const EdgeInsets.only(left: 42, right: 42, top: 42),
               children: [
-                Container(
+                SizedBox(
                   height: 118,
                   child: Column(
                     children: [
                       Container(
-                        padding: EdgeInsets.all(16),
+                        padding: const EdgeInsets.all(16),
                         height: 116,
                         width: double.maxFinite,
                         decoration: BoxDecoration(
@@ -96,7 +96,7 @@ class _CertificatePageState extends State<CertificatePage> {
                                 ),
                               ],
                             ),
-                            CircleAvatar(
+                            const CircleAvatar(
                               radius: 30,
                               child: HeroIcon(HeroIcons.user),
                             )
@@ -106,7 +106,7 @@ class _CertificatePageState extends State<CertificatePage> {
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 SizedBox(
@@ -188,7 +188,7 @@ class _CertificatePageState extends State<CertificatePage> {
                 SizedBox(
                   height: 520,
                   child: GridView.builder(
-                    padding: EdgeInsets.only(top: 20),
+                    padding: const EdgeInsets.only(top: 20),
                     gridDelegate:
                         const SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2,

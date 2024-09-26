@@ -56,8 +56,8 @@ class _TryOutScreenState extends State<TryOutScreen> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Container(
-            padding: EdgeInsets.symmetric(horizontal: 42, vertical: 31),
-            child: Text(
+            padding: const EdgeInsets.symmetric(horizontal: 42, vertical: 31),
+            child: const Text(
               'The number of eight-digit numbers in which each digit is a 1 or 2 but does not contain three consecutive 1s is . . .',
               textAlign: TextAlign.justify,
               style: TextStyle(fontSize: 26, fontWeight: FontWeight.w500),
@@ -65,7 +65,7 @@ class _TryOutScreenState extends State<TryOutScreen> {
           ),
           Expanded(
             child: ListView.separated(
-              padding: EdgeInsets.symmetric(horizontal: 42),
+              padding: const EdgeInsets.symmetric(horizontal: 42),
               itemCount: 5,
               itemBuilder: (context, index) {
                 return GestureDetector(
@@ -74,7 +74,7 @@ class _TryOutScreenState extends State<TryOutScreen> {
                       isChoosenChoice = index;
                     });
                   },
-                  child: Container(
+                  child: SizedBox(
                     height: 45,
                     child: Row(
                       children: [
@@ -116,7 +116,7 @@ class _TryOutScreenState extends State<TryOutScreen> {
             ),
           ),
           Container(
-            padding: EdgeInsets.symmetric(horizontal: 42),
+            padding: const EdgeInsets.symmetric(horizontal: 42),
             height: 100,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,

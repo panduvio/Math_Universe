@@ -49,28 +49,28 @@ class _RankingPageState extends State<RankingPage> {
           ),
           Expanded(
             child: ListView(
-              padding: EdgeInsets.symmetric(horizontal: 42),
+              padding: const EdgeInsets.symmetric(horizontal: 42),
               children: [
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
-                Text('Welcome'),
-                Text(
+                const Text('Welcome'),
+                const Text(
                   'Pandu Violana Mulya',
                   style: TextStyle(fontWeight: FontWeight.w700, fontSize: 26),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Container(
-                  padding: EdgeInsets.all(18),
+                  padding: const EdgeInsets.all(18),
                   height: 186,
                   width: double.maxFinite,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                     color: AppColor().yueGuangLanMoonlight,
                   ),
-                  child: Row(
+                  child: const Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Column(
@@ -91,7 +91,7 @@ class _RankingPageState extends State<RankingPage> {
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Row(
@@ -113,10 +113,10 @@ class _RankingPageState extends State<RankingPage> {
                             ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 6,
                         ),
-                        Text('Video'),
+                        const Text('Video'),
                       ],
                     ),
                     Column(
@@ -135,10 +135,10 @@ class _RankingPageState extends State<RankingPage> {
                             ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 6,
                         ),
-                        Text(
+                        const Text(
                           'Result\nDiscussion',
                           textAlign: TextAlign.center,
                         ),
@@ -160,10 +160,10 @@ class _RankingPageState extends State<RankingPage> {
                             ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 6,
                         ),
-                        Text('Try Out'),
+                        const Text('Try Out'),
                       ],
                     ),
                     Column(
@@ -182,10 +182,10 @@ class _RankingPageState extends State<RankingPage> {
                             ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 6,
                         ),
-                        Text(
+                        const Text(
                           'Print\nCertificate',
                           textAlign: TextAlign.center,
                         ),
@@ -207,10 +207,10 @@ class _RankingPageState extends State<RankingPage> {
                             ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 6,
                         ),
-                        Text(
+                        const Text(
                           'Question\nBank',
                           textAlign: TextAlign.center,
                         ),
@@ -218,14 +218,14 @@ class _RankingPageState extends State<RankingPage> {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 ExpansionTile(
                   shape: Border.all(
                     style: BorderStyle.none,
                   ),
-                  title: Text('Ranking Lists'),
+                  title: const Text('Ranking Lists'),
                   trailing: Text(
                     'Show All',
                     style: TextStyle(color: AppColor().blue),
@@ -254,10 +254,10 @@ class _RankingPageState extends State<RankingPage> {
                             ),
                           ),
                           title: Text(_rankList[index].name),
-                          subtitle: Text('Total Points'),
+                          subtitle: const Text('Total Points'),
                           trailing: Text(
                             '${_rankList[index].score}',
-                            style: TextStyle(fontSize: 16),
+                            style: const TextStyle(fontSize: 16),
                           ),
                         );
                       },

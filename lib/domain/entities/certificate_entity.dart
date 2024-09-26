@@ -18,7 +18,7 @@ List<CertificateEntity> certificateList = [
   CertificateEntity(
     id: 0,
     category: 'Video',
-    achievement: Text.rich(
+    achievement: const Text.rich(
       TextSpan(
         children: [
           TextSpan(text: 'You have achieved '),
@@ -32,7 +32,7 @@ List<CertificateEntity> certificateList = [
   CertificateEntity(
     id: 1,
     category: 'Question Bank',
-    achievement: Text.rich(
+    achievement: const Text.rich(
       TextSpan(
         children: [
           TextSpan(text: 'You have done '),
@@ -46,7 +46,7 @@ List<CertificateEntity> certificateList = [
   CertificateEntity(
     id: 2,
     category: 'Try Out',
-    achievement: Text.rich(
+    achievement: const Text.rich(
       TextSpan(
         children: [
           TextSpan(text: 'You have achieved '),
@@ -61,7 +61,7 @@ List<CertificateEntity> certificateList = [
   CertificateEntity(
     id: 3,
     category: 'Ranking',
-    achievement: Text.rich(
+    achievement: const Text.rich(
       TextSpan(
         children: [
           TextSpan(text: 'You have achieved '),

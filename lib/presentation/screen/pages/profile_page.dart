@@ -28,11 +28,11 @@ class _ProfilePageState extends State<ProfilePage> {
                   color: AppColor().coldSnow),
             ),
           ),
-          Container(
+          SizedBox(
             height: 195,
             child: Stack(
               children: [
-                Align(
+                const Align(
                   alignment: Alignment.center,
                   child: CircleAvatar(
                     radius: 50,
@@ -52,7 +52,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     ),
                   ),
                 ),
-                Align(
+                const Align(
                   alignment: Alignment.center,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.end,
@@ -71,19 +71,19 @@ class _ProfilePageState extends State<ProfilePage> {
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Container(
             alignment: Alignment.centerLeft,
-            padding: EdgeInsets.symmetric(horizontal: 35),
+            padding: const EdgeInsets.symmetric(horizontal: 35),
             height: 40,
             width: double.maxFinite,
             color: AppColor().whiteEdgar,
-            child: Text('Settings'),
+            child: const Text('Settings'),
           ),
           Container(
-            padding: EdgeInsets.symmetric(horizontal: 35),
+            padding: const EdgeInsets.symmetric(horizontal: 35),
             height: 210,
             width: double.maxFinite,
             child: Column(
@@ -93,15 +93,15 @@ class _ProfilePageState extends State<ProfilePage> {
                 Row(
                   // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    HeroIcon(
+                    const HeroIcon(
                       HeroIcons.moon,
                       size: 30,
                       style: HeroIconStyle.solid,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 20,
                     ),
-                    Column(
+                    const Column(
                       children: [
                         Text(
                           'Mode',
@@ -113,7 +113,7 @@ class _ProfilePageState extends State<ProfilePage> {
                         Text('Dark & Light')
                       ],
                     ),
-                    Spacer(),
+                    const Spacer(),
                     AnimatedToggleSwitch<int>.dual(
                       spacing: 10,
                       height: 40,
@@ -130,13 +130,13 @@ class _ProfilePageState extends State<ProfilePage> {
                       },
                       iconBuilder: (value) {
                         return value == 0
-                            ? HeroIcon(HeroIcons.moon)
-                            : HeroIcon(HeroIcons.sun);
+                            ? const HeroIcon(HeroIcons.moon)
+                            : const HeroIcon(HeroIcons.sun);
                       },
                     )
                   ],
                 ),
-                Row(
+                const Row(
                   children: [
                     HeroIcon(
                       HeroIcons.key,
@@ -154,7 +154,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     HeroIcon(HeroIcons.chevronRight),
                   ],
                 ),
-                Row(
+                const Row(
                   children: [
                     HeroIcon(
                       HeroIcons.language,
@@ -177,17 +177,17 @@ class _ProfilePageState extends State<ProfilePage> {
           ),
           Container(
             alignment: Alignment.centerLeft,
-            padding: EdgeInsets.symmetric(horizontal: 35),
+            padding: const EdgeInsets.symmetric(horizontal: 35),
             height: 40,
             width: double.maxFinite,
             color: AppColor().whiteEdgar,
-            child: Text('Information'),
+            child: const Text('Information'),
           ),
           Container(
-            padding: EdgeInsets.symmetric(horizontal: 35),
+            padding: const EdgeInsets.symmetric(horizontal: 35),
             height: 160,
             width: double.maxFinite,
-            child: Column(
+            child: const Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [

@@ -19,13 +19,13 @@ class _ExplorePageState extends State<ExplorePage> {
   Widget build(BuildContext context) {
     return Center(
       child: ListView(
-        padding: EdgeInsets.all(20),
+        padding: const EdgeInsets.all(20),
         children: [
-          SizedBox(
+          const SizedBox(
             height: 50,
           ),
           Container(
-            padding: EdgeInsets.only(left: 12),
+            padding: const EdgeInsets.only(left: 12),
             height: 46,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(12),
@@ -47,10 +47,10 @@ class _ExplorePageState extends State<ExplorePage> {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 40,
           ),
-          Container(
+          const SizedBox(
             height: 88,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -79,11 +79,11 @@ class _ExplorePageState extends State<ExplorePage> {
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
           Container(
-            padding: EdgeInsets.all(18),
+            padding: const EdgeInsets.all(18),
             height: 122,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
@@ -126,10 +126,10 @@ class _ExplorePageState extends State<ExplorePage> {
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
-          Row(
+          const Row(
             children: [
               HeroIcon(HeroIcons.fire),
               SizedBox(
@@ -140,7 +140,7 @@ class _ExplorePageState extends State<ExplorePage> {
               HeroIcon(HeroIcons.adjustmentsHorizontal),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           SizedBox(

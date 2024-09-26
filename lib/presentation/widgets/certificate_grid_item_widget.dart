@@ -29,7 +29,7 @@ class _CertificateGridItemWidgetState extends State<CertificateGridItemWidget> {
               borderRadius: BorderRadius.circular(8),
               color: AppColor().yueGuangLanMoonlight,
             ),
-            child: Text(
+            child: const Text(
               'Certificate',
               style: TextStyle(
                 fontSize: 20,
@@ -37,7 +37,7 @@ class _CertificateGridItemWidgetState extends State<CertificateGridItemWidget> {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 4,
           ),
           Row(
@@ -49,7 +49,7 @@ class _CertificateGridItemWidgetState extends State<CertificateGridItemWidget> {
                   Text(
                     _certificateList[widget.itemIndex].category,
                     textAlign: TextAlign.start,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontWeight: FontWeight.w500,
                     ),
                   ),
@@ -60,7 +60,7 @@ class _CertificateGridItemWidgetState extends State<CertificateGridItemWidget> {
                         style: HeroIconStyle.solid,
                         color: AppColor().yueGuangLanMoonlight,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 8,
                       ),
                       Text(

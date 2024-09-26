@@ -48,14 +48,14 @@ class _SearchPageState extends State<SearchPage> {
           ),
           Expanded(
             child: ListView(
-              padding: EdgeInsets.symmetric(horizontal: 42, vertical: 20),
+              padding: const EdgeInsets.symmetric(horizontal: 42, vertical: 20),
               children: [
-                Container(
+                SizedBox(
                   height: 95,
                   child: Column(
                     children: [
                       Container(
-                        padding: EdgeInsets.symmetric(horizontal: 10),
+                        padding: const EdgeInsets.symmetric(horizontal: 10),
                         height: 40,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(8),
@@ -68,24 +68,24 @@ class _SearchPageState extends State<SearchPage> {
                               width: 250,
                               child: TextField(
                                 controller: searchController,
-                                decoration: InputDecoration(
+                                decoration: const InputDecoration(
                                   border: InputBorder.none,
                                   hintText: 'Search Here',
                                 ),
                               ),
                             ),
-                            Spacer(),
-                            HeroIcon(HeroIcons.magnifyingGlass)
+                            const Spacer(),
+                            const HeroIcon(HeroIcons.magnifyingGlass)
                           ],
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
                       Row(
                         children: [
                           Container(
-                            padding: EdgeInsets.symmetric(horizontal: 10),
+                            padding: const EdgeInsets.symmetric(horizontal: 10),
                             height: 40,
                             width: 220,
                             decoration: BoxDecoration(
@@ -106,27 +106,26 @@ class _SearchPageState extends State<SearchPage> {
                                 setState(() {
                                   selectedItem = value!;
                                 });
-                                print(selectedItem);
                               },
                             ),
                           ),
-                          Spacer(),
-                          HeroIcon(HeroIcons.adjustmentsHorizontal),
+                          const Spacer(),
+                          const HeroIcon(HeroIcons.adjustmentsHorizontal),
                         ],
                       )
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
-                Container(
+                SizedBox(
                   height: 540,
                   child: ListView.builder(
                     padding: EdgeInsets.zero,
                     itemCount: 5,
                     itemBuilder: (context, index) {
-                      return SearchContentWidget();
+                      return const SearchContentWidget();
                     },
                   ),
                 ),

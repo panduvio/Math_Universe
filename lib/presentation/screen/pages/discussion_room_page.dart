@@ -48,16 +48,16 @@ class _DiscussionRoomPageState extends State<DiscussionRoomPage> {
           ),
           Expanded(
             child: ListView(
-              padding: EdgeInsets.symmetric(horizontal: 42),
+              padding: const EdgeInsets.symmetric(horizontal: 42),
               children: [
-                Container(
+                SizedBox(
                   height: 150,
                   child: Column(
                     children: [
-                      SizedBox(
+                      const SizedBox(
                         height: 52,
                       ),
-                      Row(
+                      const Row(
                         children: [
                           HeroIcon(HeroIcons.userCircle),
                           SizedBox(
@@ -69,13 +69,13 @@ class _DiscussionRoomPageState extends State<DiscussionRoomPage> {
                           ),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 20,
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text(
+                          const Text(
                             'Probability',
                             style: TextStyle(
                               fontSize: 30,
@@ -102,7 +102,8 @@ class _DiscussionRoomPageState extends State<DiscussionRoomPage> {
                               });
                             },
                             child: Container(
-                              padding: EdgeInsets.symmetric(horizontal: 6),
+                              padding:
+                                  const EdgeInsets.symmetric(horizontal: 6),
                               decoration: BoxDecoration(
                                 border: Border.all(
                                     color: AppColor().yueGuangLanMoonlight,
@@ -123,7 +124,7 @@ class _DiscussionRoomPageState extends State<DiscussionRoomPage> {
                                             ? AppColor().yueGuangLanMoonlight
                                             : AppColor().coldSnow),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     width: 10,
                                   ),
                                   HeroIcon(
@@ -141,20 +142,20 @@ class _DiscussionRoomPageState extends State<DiscussionRoomPage> {
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
-                Container(
+                SizedBox(
                   height: 270,
                   child: Column(
                     children: [
-                      Text(
+                      const Text(
                         'A die is thrown once, what is the probability of getting a 5 on the die? Please help answer, thank you...',
                         textAlign: TextAlign.justify,
                         style: TextStyle(
                             fontSize: 20, fontStyle: FontStyle.italic),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
                       Container(
@@ -164,10 +165,10 @@ class _DiscussionRoomPageState extends State<DiscussionRoomPage> {
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
-                Row(
+                const Row(
                   children: [
                     HeroIcon(HeroIcons.userCircle),
                     SizedBox(
@@ -179,10 +180,10 @@ class _DiscussionRoomPageState extends State<DiscussionRoomPage> {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
-                SizedBox(
+                const SizedBox(
                   child: Text(
                     'Hello, Nadya. Permission to answer...\n\nSo, we need to determine the number of sample points first. So, the point until a dice is 6, or we can denote it as n(s) = 6.\n\nNext, we determine the sample point on the dice which has a value of 5, which is 1 or we can denote it as n(A) = 1.\n\nIn accordance with the probability formula, namely, P(A) = n(A)/n(S) = 1/ 6.\nSo, the probability of getting a 5 on the die is 1/6.',
                     textAlign: TextAlign.justify,
