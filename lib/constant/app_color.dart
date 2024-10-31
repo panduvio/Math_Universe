@@ -7,6 +7,7 @@ class AppColor {
   // final white = Colors.white; // Secondary Color
   final black = Colors.black;
   final red = Colors.red;
+  final georgeaPeach = const Color(0xFFFE6D73); // onPress Nav Bar Color
   final blue = Colors.blue;
   final mistyHarbor = const Color(0xFF66769A); // onPress Nav Bar Color
   final capeJasmine = const Color(0xFFFFBD59); // onPress Nav Bar Color
@@ -15,6 +16,7 @@ class AppColor {
   final whiteEdgar = const Color(0xFFEDEDED); // unselected button 2 Color
   final goldenGun = const Color(0xFFE0D806); // unselected button 2 Color
   final burnishedBronze = const Color(0xFF9C7F40); // unselected button 2 Color
+  final unicornSilver = const Color(0xFFE8E8E8);
 
   //Text Color
   final wildDove = const Color(0xFF8A8A8A); // unselected button Color

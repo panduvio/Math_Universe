@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:math_universe/presentation/providers/page_provider.dart';
+import 'package:math_universe/presentation/screen/pages/activity_page.dart';
 import 'package:math_universe/presentation/screen/pages/certificate_page.dart';
 import 'package:math_universe/presentation/screen/pages/competition_information_page.dart';
 import 'package:math_universe/presentation/screen/pages/discussion_room_feedback_page.dart';
@@ -77,6 +78,8 @@ class _HomePageState extends State<HomePage> {
         page = _searchPage();
       } else if (pageIndex == 12) {
         page = _profilePage();
+      } else if (pageIndex == 13) {
+        page = _activityPage();
       }
     });
     return page;
@@ -132,5 +135,9 @@ class _HomePageState extends State<HomePage> {
 
   Widget _profilePage() {
     return const ProfilePage();
+  }
+
+  Widget _activityPage() {
+    return const ActivityPage();
   }
 }

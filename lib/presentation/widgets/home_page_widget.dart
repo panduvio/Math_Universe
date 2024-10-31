@@ -442,6 +442,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             onTapUp: (details) {
                               setState(() {
                                 kategoriIndex = 0;
+                                Provider.of<PageProvider>(context,
+                                        listen: false)
+                                    .changeIndex(13);
                               });
                             },
                             onTapCancel: () {
@@ -492,10 +495,10 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                     InkWell(
                       borderRadius: BorderRadius.circular(8),
                       onTap: () {
-                        // setState(() {
-                        //   Provider.of<PageProvider>(context, listen: false)
-                        //       .changeIndex(1);
-                        // });
+                        setState(() {
+                          Provider.of<PageProvider>(context, listen: false)
+                              .changeIndex(1);
+                        });
                       },
                       child: HeroIcon(
                         HeroIcons.bars3,

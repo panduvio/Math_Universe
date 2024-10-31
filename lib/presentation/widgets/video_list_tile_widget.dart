@@ -26,7 +26,9 @@ class _VideoListTileWidgetState extends State<VideoListTileWidget> {
             height: 110,
             width: 110,
             clipBehavior: Clip.hardEdge,
-            decoration: BoxDecoration(borderRadius: BorderRadius.circular(10)),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+            ),
             child: Image.asset(
               _videoList[widget.videoIndex].thumbnail,
               fit: BoxFit.fitHeight,

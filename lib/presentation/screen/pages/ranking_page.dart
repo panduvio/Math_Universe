@@ -14,6 +14,9 @@ class RankingPage extends StatefulWidget {
 
 class _RankingPageState extends State<RankingPage> {
   final _rankList = rankList;
+  int featureButtonIndex = 0;
+  bool isTileExpanded = false;
+
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -101,11 +104,28 @@ class _RankingPageState extends State<RankingPage> {
                     Column(
                       children: [
                         GestureDetector(
-                          onTapDown: (details) {},
-                          onTapUp: (details) {},
-                          onTapCancel: () {},
+                          onTapDown: (details) {
+                            setState(() {
+                              featureButtonIndex = 1;
+                            });
+                          },
+                          onTapUp: (details) {
+                            setState(() {
+                              featureButtonIndex = 0;
+
+                              Provider.of<PageProvider>(context, listen: false)
+                                  .changeIndex(5);
+                            });
+                          },
+                          onTapCancel: () {
+                            setState(() {
+                              featureButtonIndex = 0;
+                            });
+                          },
                           child: CircleAvatar(
-                            backgroundColor: AppColor().yueGuangLanMoonlight,
+                            backgroundColor: featureButtonIndex == 1
+                                ? AppColor().capeJasmine
+                                : AppColor().yueGuangLanMoonlight,
                             radius: 23,
                             child: HeroIcon(
                               HeroIcons.videoCamera,
@@ -123,11 +143,25 @@ class _RankingPageState extends State<RankingPage> {
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         GestureDetector(
-                          onTapDown: (details) {},
-                          onTapUp: (details) {},
-                          onTapCancel: () {},
+                          onTapDown: (details) {
+                            setState(() {
+                              featureButtonIndex = 2;
+                            });
+                          },
+                          onTapUp: (details) {
+                            setState(() {
+                              featureButtonIndex = 0;
+                            });
+                          },
+                          onTapCancel: () {
+                            setState(() {
+                              featureButtonIndex = 0;
+                            });
+                          },
                           child: CircleAvatar(
-                            backgroundColor: AppColor().yueGuangLanMoonlight,
+                            backgroundColor: featureButtonIndex == 2
+                                ? AppColor().capeJasmine
+                                : AppColor().yueGuangLanMoonlight,
                             radius: 23,
                             child: HeroIcon(
                               HeroIcons.arrowsRightLeft,
@@ -148,11 +182,25 @@ class _RankingPageState extends State<RankingPage> {
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         GestureDetector(
-                          onTapDown: (details) {},
-                          onTapUp: (details) {},
-                          onTapCancel: () {},
+                          onTapDown: (details) {
+                            setState(() {
+                              featureButtonIndex = 3;
+                            });
+                          },
+                          onTapUp: (details) {
+                            setState(() {
+                              featureButtonIndex = 0;
+                            });
+                          },
+                          onTapCancel: () {
+                            setState(() {
+                              featureButtonIndex = 0;
+                            });
+                          },
                           child: CircleAvatar(
-                            backgroundColor: AppColor().yueGuangLanMoonlight,
+                            backgroundColor: featureButtonIndex == 3
+                                ? AppColor().capeJasmine
+                                : AppColor().yueGuangLanMoonlight,
                             radius: 23,
                             child: HeroIcon(
                               HeroIcons.pencilSquare,
@@ -170,11 +218,25 @@ class _RankingPageState extends State<RankingPage> {
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         GestureDetector(
-                          onTapDown: (details) {},
-                          onTapUp: (details) {},
-                          onTapCancel: () {},
+                          onTapDown: (details) {
+                            setState(() {
+                              featureButtonIndex = 4;
+                            });
+                          },
+                          onTapUp: (details) {
+                            setState(() {
+                              featureButtonIndex = 0;
+                            });
+                          },
+                          onTapCancel: () {
+                            setState(() {
+                              featureButtonIndex = 0;
+                            });
+                          },
                           child: CircleAvatar(
-                            backgroundColor: AppColor().yueGuangLanMoonlight,
+                            backgroundColor: featureButtonIndex == 4
+                                ? AppColor().capeJasmine
+                                : AppColor().yueGuangLanMoonlight,
                             radius: 23,
                             child: HeroIcon(
                               HeroIcons.printer,
@@ -195,11 +257,25 @@ class _RankingPageState extends State<RankingPage> {
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         GestureDetector(
-                          onTapDown: (details) {},
-                          onTapUp: (details) {},
-                          onTapCancel: () {},
+                          onTapDown: (details) {
+                            setState(() {
+                              featureButtonIndex = 5;
+                            });
+                          },
+                          onTapUp: (details) {
+                            setState(() {
+                              featureButtonIndex = 0;
+                            });
+                          },
+                          onTapCancel: () {
+                            setState(() {
+                              featureButtonIndex = 0;
+                            });
+                          },
                           child: CircleAvatar(
-                            backgroundColor: AppColor().yueGuangLanMoonlight,
+                            backgroundColor: featureButtonIndex == 5
+                                ? AppColor().capeJasmine
+                                : AppColor().yueGuangLanMoonlight,
                             radius: 23,
                             child: HeroIcon(
                               HeroIcons.clipboardDocumentList,
@@ -222,12 +298,17 @@ class _RankingPageState extends State<RankingPage> {
                   height: 20,
                 ),
                 ExpansionTile(
+                  onExpansionChanged: (value) {
+                    setState(() {
+                      isTileExpanded = value;
+                    });
+                  },
                   shape: Border.all(
                     style: BorderStyle.none,
                   ),
                   title: const Text('Ranking Lists'),
                   trailing: Text(
-                    'Show All',
+                    isTileExpanded ? 'Hide All' : 'Show All',
                     style: TextStyle(color: AppColor().blue),
                   ),
                   children: [

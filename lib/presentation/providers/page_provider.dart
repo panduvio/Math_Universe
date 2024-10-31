@@ -16,6 +16,7 @@ class PageProvider extends ChangeNotifier {
     'Explore', //10
     'Search', //11
     'Profile', //12
+    'Activity', //13
   ];
 
   int _pageIndex = 0;

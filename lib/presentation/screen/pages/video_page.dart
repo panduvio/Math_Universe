@@ -138,7 +138,6 @@ class _VideoPageState extends State<VideoPage> {
                 SizedBox(
                   height: 35,
                   child: ListView.builder(
-                    padding: const EdgeInsets.only(left: 36),
                     scrollDirection: Axis.horizontal,
                     itemCount: subjectList.length,
                     itemBuilder: (BuildContext context, int index) {
